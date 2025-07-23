@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" class="logo" width="120"/>
-
 # Tutoring Center
 
 **Tutoring Center** is an internal web application that provides a back-end API and database configuration to manage tutoring sessions, tutors, and students. It leverages a containerized Node.js service, a PostgreSQL database, and Docker Compose for easy local development.
