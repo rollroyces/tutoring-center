@@ -1,0 +1,169 @@
+:root {
+  /* Dark Theme Colors */
+  --color-background: #1e1e1e;
+  --color-surface:    #2a2a2a;
+  --color-border:     #3a3a3a;
+  --color-text:       #e1e1e1;
+  --color-text-secondary: #a3a3a3;
+  --color-primary:    #4a90e2;
+  --color-primary-hover: #357ab7;
+  --color-error:      #e74c3c;
+  --color-warning:    #f39c12;
+  --color-success:    #27ae60;
+
+  /* Typography */
+  --font-family-base:    "Inter", sans-serif;
+  --font-size-base:      14px;
+  --font-size-lg:        16px;
+  --font-size-xl:        18px;
+  --font-size-2xl:       20px;
+  --font-size-3xl:       24px;
+  --font-size-4xl:       30px;
+  --font-weight-medium:  500;
+  --font-weight-semibold:600;
+
+  /* Spacing & Radius */
+  --space-8:   8px;
+  --space-12:  12px;
+  --space-16:  16px;
+  --space-24:  24px;
+  --radius-base: 6px;
+}
+
+/* Global */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+}
+a {
+  color: var(--color-primary);
+}
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* Navbar */
+.navbar, .navbar .nav-link {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
+}
+.navbar .nav-link.active {
+  color: var(--color-primary) !important;
+}
+
+/* Container */
+#view-container {
+  background-color: var(--color-background);
+  padding: var(--space-16) var(--space-24);
+}
+
+/* Cards */
+.card {
+  background-color: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-base) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.5) !important;
+}
+.card-header, .card-body, .card-footer {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
+}
+
+/* Tables */
+.table, .table-responsive {
+  background-color: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+}
+.table th, .table td {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
+}
+.table thead th {
+  background-color: #1f1f1f !important;
+  color: #ffffff !important;
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #2f2f2f !important;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #2a2a2a !important;
+}
+.table tbody tr:hover {
+  background-color: #3a3a3a !important;
+}
+
+/* Headings */
+#view-container h1,
+#view-container h2,
+#view-container h3,
+#view-container h4,
+#view-container h5,
+#view-container h6 {
+  color: var(--color-text) !important;
+}
+
+/* Text & Labels */
+#view-container p,
+#view-container label,
+#view-container .form-label,
+#view-container .card-title {
+  color: var(--color-text) !important;
+}
+
+/* Forms */
+.form-control, .form-select, textarea {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 2px rgba(74,144,226,0.5) !important;
+}
+
+/* Buttons */
+.btn {
+  font-weight: var(--font-weight-medium) !important;
+}
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  color: #fff !important;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-hover) !important;
+}
+.btn-outline-primary {
+  border-color: var(--color-primary) !important;
+  color: var(--color-primary) !important;
+}
+.btn-outline-primary:hover {
+  background-color: rgba(74,144,226,0.1) !important;
+}
+.btn-outline-danger {
+  border-color: var(--color-error) !important;
+  color: var(--color-error) !important;
+}
+.btn-outline-danger:hover {
+  background-color: rgba(231,76,60,0.1) !important;
+}
+
+/* Low balance highlight */
+.low-balance {
+  color: var(--color-warning) !important;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Modal backdrop */
+.modal-backdrop.show {
+  background-color: rgba(0,0,0,0.7) !important;
+}
+
+/* Chart canvas */
+canvas {
+  background-color: var(--color-surface) !important;
+}
